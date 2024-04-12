@@ -12,6 +12,8 @@
     "k3d:create": "k3d cluster create nlw-unit --servers 2",
     "k3d:start": "k3d cluster start -a",
     "kubectl:apply": "kubectl apply -f ./k8s -n nlw",
+    "kubectl:argo:server": "kubectl port-forward svc/argocd-server -n argocd 3001:80",
+    "kubectl:argo:apply": "kubectl apply -f ./argo.yaml",
     "helm:upgrade": "helm upgrade --install passin ./deploy -n nlw-helm"
   },
   "keywords": [],
