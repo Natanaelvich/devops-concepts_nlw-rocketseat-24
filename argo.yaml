@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:Natanaelvich/devops-concepts_nlw-rocketseat-24.git
+    repoURL: https://github.com/Natanaelvich/devops-concepts_nlw-rocketseat-24.git
     targetRevision: HEAD
     path: deploy
   destination:
