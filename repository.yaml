@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+
+metadata:
+  name: private-repo
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+
+stringData:
+  type: git
+  url: git@github.com:Natanaelvich/devops-concepts_nlw-rocketseat-24.git
