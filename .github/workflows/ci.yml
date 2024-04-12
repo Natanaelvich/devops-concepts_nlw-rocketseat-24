@@ -9,6 +9,10 @@ jobs:
   build-and-push:
     name: 'Build and push'
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
+        pull-requests: write
+        repository-projects: write
 
     steps:
     - name: Checkout
