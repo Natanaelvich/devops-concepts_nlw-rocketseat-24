@@ -13,7 +13,7 @@ spec:
     path: deploy
   destination:
     server: https://kubernetes.default.svc
-    namespace: nlw
+    namespace: nlw-helm
   syncPolicy:
     automated:
       prune: true
