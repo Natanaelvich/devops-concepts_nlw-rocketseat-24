@@ -20,7 +20,8 @@
     "kubectl:argo:install": "kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml",
     "kubectl:pods:argo": "kubectl get pods -n argocd",
     "kubectl:argo:apply": "kubectl apply -f ./argo.yaml",
-    "kubectl:argo:server": "kubectl port-forward svc/argocd-server -n argocd 3001:80"
+    "kubectl:argo:server": "kubectl port-forward svc/argocd-server -n argocd 3001:80",
+    "aws:configmap": "aws eks --region us-west-1 update-kubeconfig --name devops-concepts_nlw-rocketseat-24"
   },
   "keywords": [],
   "author": "",
